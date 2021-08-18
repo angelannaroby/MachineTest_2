@@ -1,13 +1,117 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --lightblack: #343b41;
+  --white: #fff;
+}
+
+/* HOME */
+
+footer {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: var(--lightblack);
+}
+
+p.copyright {
+  position: absolute;
+  width: 100%;
+  color: var(--white);
+  line-height: 40px;
+  font-size: 0.7em;
+  text-align: center;
+  bottom:0;
+}
+
+/* BANNER */
+
+.banner {
+  height: 500px;
+  background-image: url("../src/pollute.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+.bannerText {
+  position: relative;
+  top: 53%;
+  left: 45px;
+}
+
+/* LATEST DATA */
+.latestCard {
+  height: fit-content;
+}
+
+.latestCardDetail {
+  min-height: 497px !important;
+}
+
+.latestInnerCard {
+  margin-top: 10px !important;
+  margin-bottom: 25px !important;
+  background-color: var(--lightblack) !important;
+  color: var(--white) !important;
+  height: 175px;
+}
+
+.largeText {
+  font-size: calc((0.4em + 2vmin) + (0.4em + 2vmax));
+}
+
+sub {
+  font-size: 20% !important;
+}
+.measurements {
+  position: absolute;
+  top: 90px;
+}
+.coordinates {
+  position: absolute;
+  bottom: 150px;
+}
+.lastUpdated {
+  position: absolute;
+  bottom: 45px;
+}
+
+/* GRAPHICAL DATA */
+
+.graphContainer {
+  background-color: var(--white);
+  margin-top: 50px !important;
+  margin-bottom: 50px;
+  border-color: var(--lightblack);
+}
+.selectDateCard{
+  border: none !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+.selectDateHeader {
+  background-color: var(--white) !important;
+}
+
+.datePicker {
+  background-color: var(--lightblack);
+  color: var(--white);
+  padding: 2px;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  margin: auto;
+  width: 50%;
+  display: block;
+}
+
+input.datePicker {
+  font-size: larger;
+}
+
+input.datePicker :focus {
+  border: none !important;
 }

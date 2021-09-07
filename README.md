@@ -1,6 +1,6 @@
-Simelabs
-API: Open AQ
-Task:
+#Simelabs
+#API: Open AQ
+#Task:
 
 https://openaq.org/#/?_k=kw4gn9
 
